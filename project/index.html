@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #141e30, #243b55);
+            padding: 20px 0;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #007bff;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .hero {
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #b3009b;
+            transform: scale(1.1);
+        }
+
+        .about, .services, .portfolio, .contact {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .portfolio-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #555;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #141e30;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        button, input, textarea {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        .product {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .product-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .product-buttons .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .product-buttons .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="apple logo.png" alt="Apple Logo">
+                <h1>Apple</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Apple</h2>
+            <p>Innovating technology, empowering creativity.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
+
+    <section id="products" class="services">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="service-list">
+                <div class="product">
+                    <h3>iPhone</h3>
+                    <p>The most advanced iPhone ever, with cutting-edge technology and design.</p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn">Buy Now</a>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>MacBook</h3>
+                    <p>Powerful and sleek laptops for professionals and creatives.</p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn">Buy Now</a>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>Apple Watch</h3>
+                    <p>Your ultimate health and fitness companion.</p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn">Buy Now</a>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Innovations</h2>
+            <div class="portfolio-gallery">
+                <figure>
+                    <img src="pexels-designecologist-1398339.jpg" alt="iPhone">
+                    <figcaption>iPhone: Redefining the smartphone experience.</figcaption>
+                </figure>
+                <figure>
+                    <img src="pexels-anastasia-shuraeva-5705515.jpg" alt="MacBook">
+                    <figcaption>MacBook: Designed for power and portability.</figcaption>
+                </figure>
+                <figure>
+                    <img src="pexels-shvetsa-4482933.jpg" alt="Apple Watch">
+                    <figcaption>Apple Watch: A revolution in personal health tracking.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-section" class="new-section">
+        <div class="container">
+            <h2>Our Vision</h2>
+            <p>At Apple, we envision a world where technology seamlessly integrates into every aspect of life, empowering individuals to achieve more and connect deeply with what matters most.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Apple is dedicated to delivering the best in technology, design, and user experience. From groundbreaking hardware to innovative software, we create products that transform the way people live, work, and play.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Apple Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
